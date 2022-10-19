@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SmartePing</string>
+    <string name="inicar_sesion">Iniciar sesión</string>
+    <string name="registrar">Registrar</string>
+    <string name="cerrarsesion">Cerrar sesion</string>
+    <string name="txt_kilos">Kilos vendidos</string>
+    <string name="guardar">Guardar kilos</string>
+</resources>

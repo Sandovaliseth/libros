@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/cerrarsesion"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#88CAD3"
+        android:onClick="Goclose"
+        android:text="@string/cerrarsesion"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="134dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#88CAD3"
+        android:onClick="registrar"
+        android:text="@string/registrar"
+        android:textColor="#040303"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#88CAD3"
+        android:baselineAligned="false"
+        android:onClick="iniciar"
+        android:text="@string/inicar_sesion"
+        android:textColor="#050505"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="518dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="73dp"
+                android:layout_height="64dp"
+                app:srcCompat="@drawable/consejos" />
+
+            <Button
+                android:id="@+id/btn_consejos"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#C6C0B1"
+                android:onClick="Goconsejos"
+                android:text="Consejos"
+                android:textColor="#000000"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="74dp"
+                android:layout_height="56dp"
+                app:srcCompat="@drawable/vcarne" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#C6C0B1"
+                android:onClick="Goventa"
+                android:text="Ventas carnes"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/libros" />
+
+            <Button
+                android:id="@+id/btn_libros"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#C6C0B1"
+                android:baselineAligned="false"
+                android:onClick="Golibros"
+                android:text="Libros"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/noticias" />
+
+            <Button
+                android:id="@+id/btn_noticias"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#C6C0B1"
+                android:onClick="Gonoticias"
+                android:text="Noticias"
+                android:textColor="#000000"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="75dp"
+                android:layout_height="59dp"
+                app:srcCompat="@drawable/tipo" />
+
+            <Button
+                android:id="@+id/btn_tipo"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#C6C0B1"
+                android:onClick="Gotipos"
+                android:text="Tipos"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="77dp"
+                android:layout_height="53dp"
+                app:srcCompat="@drawable/raza" />
+
+            <Button
+                android:id="@+id/btn_razas"
+                android:layout_width="114dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#C6C0B1"
+                android:onClick="Gorazas"
+                android:text="Razas"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
